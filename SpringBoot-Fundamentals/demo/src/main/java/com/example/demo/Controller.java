@@ -14,12 +14,6 @@ public class Controller {
     private int customerIdCounter = 1;
 
     // Create a new customer
-    @PostMapping("/create")
-    public Customer createCustomer(@RequestBody Customer customer) {
-        customer.setId(customerIdCounter++);
-        customerList.add(customer);
-        return customer;
-    }
 
     // Retrieve all customers
     @GetMapping("/all")
